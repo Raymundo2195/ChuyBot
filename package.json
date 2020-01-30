@@ -1,0 +1,16 @@
+{
+  "name": "chuybot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Raymundo2195/ChuyBot.git",
+  "author": "Raymund Alksninis <raymund.alksninis@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start-gachi": "node Gachi.js",
+    "start-chuy": "node Chewer.js",
+    "update-command-list": "node getList.js"
+  },
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}

@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 
 const client = new Discord.Client();
 
-const token = 'MzE3MTI0NjAwODA0ODAyNTYw.DAfw5Q.slTz4vppbGwDPfehrKdM79gPmOI';
+const token = 'MzE3MTI0NjAwODA0ODAyNTYw.DL3s4w.HD0JbTvI5nj8-KczCIPn1Tw44FU';
 var count = 0;
 var voice_connection = null;
 var voice_handler = null;
@@ -39,6 +39,15 @@ client.on('message', message => {
 		if(message.content.startsWith(prefix+'help')){
 			message.channel.send("Possible chuy commands are:\nping\nexactly\nofc\nlong\nhai\nsimple\ntalkin1\ntalkin2\ntalkin3\ntalkin4\nty")
 
+		}
+		else if (message.content.startsWith(prefix+'comply')){
+			for (var i = 0; i < 5; i++) {
+				message.channel.send("TYR4NNY WILL NOT STOP US");
+			}
+			// var INTerval = setInterval(function(){
+			// 	message.channel.send("TYRANT");
+			// }, 1000);
+			// setTimeout(function(){ clearInterval(INTerval); }, 11000);
 		}
 		else if (voiceChannel){
 			voiceChannel.join().then(connection => {
