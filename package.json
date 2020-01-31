@@ -11,6 +11,10 @@
     "update-command-list": "node getList.js"
   },
   "dependencies": {
-    "discord.js": "^11.5.1"
+    "discord.js": "^11.5.1",
+    "erlpack": "hammerandchisel/erlpack",
+    "ffmpeg": "^0.0.4",
+    "node-opus": "^0.3.3",
+    "sodium": "^3.0.2"
   }
 }

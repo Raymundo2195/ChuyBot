@@ -3,7 +3,7 @@ const fs = require('fs')
 
 const client = new Discord.Client();
 
-const token = 'MzE3MTI0NjAwODA0ODAyNTYw.DL3s4w.HD0JbTvI5nj8-KczCIPn1Tw44FU';
+const token = 'MzE3MTI0NjAwODA0ODAyNTYw.XjNwPg.Mgrp-mh8rvWgO9208NoGI0AFmYg';
 var count = 0;
 var voice_connection = null;
 var voice_handler = null;
@@ -37,4 +37,6 @@ client.on('message', message => {
     }
 );
 
-client.login(token);
+client.login(token).catch((error) => {
+    console.log("Failed to login: ", error)
+});
